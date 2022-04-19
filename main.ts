@@ -7,7 +7,7 @@ let Jugador = game.createSprite(0, 0)
 game.setScore(0)
 CreaEnemigo()
 basic.forever(function () {
-    if (0 > input.acceleration(Dimension.X)) {
+    if (input.acceleration(Dimension.X) > 600) {
         Jugador.change(LedSpriteProperty.X, 1)
     }
     if (input.acceleration(Dimension.X) < -600) {
